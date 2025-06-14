@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Basic Information Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1> Basic Information Form </h1>
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Full Name"required>
+  <br>
+    <label for="mobile">Mobile No:</label>
+    <input type="number" id="mobile" name="mobile" required>
+<br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+<br>
+    
+    <label>Gender:</label>
+	<div class="gender">
+    <input type="radio" id="male" name="gender" value="Male">
+      <label for="male">Male</label>
+	  <br>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label>
+	  <br>
+	  <input type="radio" id="trans" name="gender" value="Transgender">
+      <label for="female">Transgender</label>
+    </div>
+
+    <label>Education Done:</label>
+    <div class="education">
+      <input type="checkbox" id="ssc" name="education" value="SSC">
+      <label for="senior secondary class" style="display:inline;">SSC</label><br>
+      <input type="checkbox" id="hsc" name="education" value="HSC">
+      <label for="higher secondary class" style="display:inline;">HSC</label><br>
+      <input type="checkbox" id="graduate" name="education" value="Graduate">
+      <label for="graduate" style="display:inline;">Graduate</label>
+    </div>
+
+    <label for="tea" >Do you like tea?</label>
+    <select id="tea" name="tea" >
+      <option value="Yes">Yes</option>
+      <option value="No">No</option>
+      <option value="Sometimes">Sometimes</option>
+    </select>
+
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+</body>
+</html>
